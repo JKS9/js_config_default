@@ -1,0 +1,19 @@
+$color: white;
+$colors: black;
+
+@mixin alignCenter($color) {
+    text-align: center;
+    color: $color;
+}
+body {
+    background-color: #2b8a80;
+}
+
+#app {
+  > h1 {
+    @include alignCenter($color);
+  }
+  > h2 {
+    @include alignCenter($colors);
+  }
+}
